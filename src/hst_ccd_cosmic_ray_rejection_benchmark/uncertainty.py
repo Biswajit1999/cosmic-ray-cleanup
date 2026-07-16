@@ -6,7 +6,7 @@
   reduced chi-square from a nonlinear least-squares solver
   (`check_fit_convergence`).
 
-These are reported separately per CLAUDE_TASK.md's requirement to not
+These are reported separately per docs/VALIDATION_CONTRACT.md's requirement to not
 conflate observational uncertainty with numerical convergence uncertainty.
 """
 from __future__ import annotations

@@ -1,6 +1,6 @@
 # Local Completion Report — HST CCD Cosmic-Ray Rejection Benchmark
 
-Author: Biswajit Jana. This report documents a local Claude Code implementation pass
+Author: Biswajit Jana. This report documents a local implementation pass
 (project 11 of the 30-project pack, `BUILD_FIRST` priority 9.3/10). No git operations
 were performed. Nothing has been published.
 
@@ -47,8 +47,8 @@ a working conda env, and real (non-stub) `config.py`, `exceptions.py`,
   `web-react/package.json` (removed unused `recharts`), `web-react/src/App.jsx`
   (rewritten from the `hst-wfc3ir-ramp-linearity-audit` template),
   `web-react/public/project.json` (rewritten with this project's real content).
-- Added `.claude/launch.json` for this project's own web-react dev server (a
-  project-local file, not the shared `GitHub/.claude/launch.json`, which was not
+- Added `local browser-preview launch config` for this project's own web-react dev server (a
+  project-local file, not the shared root-level browser-preview launch config, which was not
   touched).
 
 ## 3. Exact commands run (in order)
@@ -80,12 +80,12 @@ pytest -q ; ruff check . ; mypy src scripts      # re-verified after real data s
 - **mypy**: clean on `src` and `scripts` (0 errors, 18 source files).
 - **web-react**: `npm run lint` and `npm run build` both clean, both before and
   after `sync_web_assets.py` copied the real results in.
-- Live browser verification was skipped: the shared `GitHub/.claude/launch.json`
-  (which the task instructions say must not be touched) is pinned to a sibling
-  project's dev server, and this tool environment's browser-preview integration
-  only reads that shared file rather than this project's own
-  `web-react/.claude/launch.json`. `npm run lint && npm run build` both passing
-  clean is the documented primary bar and was met.
+- Live browser verification was skipped: the shared root-level browser-preview
+  launch config (which the task instructions say must not be touched) is
+  pinned to a sibling project's dev server, and this tool environment's
+  browser-preview integration only reads that shared file rather than this
+  project's own project-local browser-preview launch config. `npm run lint &&
+  npm run build` both passing clean is the documented primary bar and was met.
 
 ### Bugs found and fixed during implementation
 1. `fetch.BackgroundImage` dataclass declared a required `bunit: str` field, but

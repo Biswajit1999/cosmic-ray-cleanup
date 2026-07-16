@@ -1,7 +1,7 @@
 # Implementation Plan — HST CCD Cosmic-Ray Rejection Benchmark
 
 This is a local, non-public planning document (not committed to any remote; no git
-operations are performed in this repository per `CLAUDE_TASK.md`).
+operations are performed in this repository per this project's non-negotiable restrictions).
 
 ## 1. Scope restatement
 

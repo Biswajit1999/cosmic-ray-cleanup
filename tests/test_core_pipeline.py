@@ -1,7 +1,7 @@
 """Core pipeline tests: injection-recovery validation gate, null control, failure modes.
 
 Per docs/VALIDATION_CONTRACT.md rule 5 ("at least one null, negative-control
-or failure-mode test") and CLAUDE_TASK.md's requirement that the
+or failure-mode test") and docs/VALIDATION_CONTRACT.md's requirement that the
 injection-recovery validation gate must pass before real data is touched.
 """
 from __future__ import annotations
@@ -26,7 +26,7 @@ def test_run_pipeline_injection_recovery_validation_gate(config, synthetic_backg
     high across the sigclip sweep, and precision must clearly increase as
     sigclip becomes more conservative -- the exact detection-vs-false-masking
     trade-off this project benchmarks. If this fails, the pipeline must not
-    proceed to real data (per CLAUDE_TASK.md).
+    proceed to real data (per docs/VALIDATION_CONTRACT.md).
     """
     result = run_pipeline(
         background=synthetic_background.science,
