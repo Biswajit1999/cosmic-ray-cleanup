@@ -1,0 +1,9 @@
+{
+  "figure": "fig02_cleaning_comparison",
+  "data_kind": "real HST cutouts + controlled injection",
+  "sample_size": 1,
+  "units": "electrons",
+  "git_commit": "LOCAL_UNCOMMITTED",
+  "config_sha256": "6c0948c81225547177959ce78b0b588021baa7ada3000aa2e5b63826f9dcf3c9",
+  "package_version": "0.1.0"
+}

@@ -1,0 +1,1 @@
+hst_ccd_cosmic_ray_rejection_benchmark

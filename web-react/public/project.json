@@ -1,0 +1,45 @@
+{
+  "title": "HST CCD Cosmic-Ray Rejection Benchmark",
+  "repo": "cosmic-ray-cleanup",
+  "category": "Astrophysics instrumentation / image analysis",
+  "status": "BUILD_FIRST",
+  "priority": 9.3,
+  "question": "How do cosmic-ray rejection parameters trade detection recall against false masking and aperture-flux bias on HST CCD images?",
+  "gap": "A controlled benchmark with injected ground truth; not a replacement for Astro-SCRAPPY, deepCR, Cosmic-CoNN or HST pipelines.",
+  "dataMode": "real HST cutouts + controlled injection",
+  "novelty": "A controlled benchmark of astroscrappy's (L.A.Cosmic, van Dokkum 2001) published sigclip parameter against known-ground-truth synthetic cosmic-ray injections on real HST ACS/WFC background frames; not a new rejection algorithm and not a replacement for Astro-SCRAPPY, deepCR, Cosmic-CoNN, or the standard HST calibration pipeline.",
+  "figures": [
+    { "id": "fig01_injected_image_and_mask", "label": "Injected image and detection mask" },
+    { "id": "fig02_cleaning_comparison", "label": "Before/after cleaning comparison" },
+    { "id": "fig03_precision_recall_panel", "label": "Precision/recall/false-masking vs sigclip" },
+    { "id": "fig04_flux_bias", "label": "Aperture-flux bias vs sigclip" },
+    { "id": "fig05_runtime", "label": "Runtime per megapixel vs sigclip" }
+  ],
+  "validationContract": [
+    "pixel-level precision/recall/F1 against exactly-known injected cosmic-ray pixels",
+    "PSF-core false-masking rate against DAOStarFinder/synthetic point sources",
+    "background masking rate (documented upper bound on the true false-positive rate)",
+    "aperture-flux fractional bias (photutils, local annulus background)",
+    "bootstrap 95% CIs (1000 resamples, seed 20260713) on recall/precision/flux bias",
+    "runtime per megapixel",
+    "at least one null/negative-control test (CR-free field, low false-positive rate)"
+  ],
+  "methodology": "A small real ACS/WFC FLT (calibrated, uncombined single-exposure) cutout, or a clearly-labelled synthetic background for the demo path, serves as the background image. Known synthetic cosmic-ray tracks (short, sharp, non-PSF-convolved multi-pixel energy deposits, excluded from overlapping any detected point-source core) are injected at random positions with recorded exact pixel footprint and amplitude. astroscrappy.detect_cosmics (a published L.A.Cosmic implementation, van Dokkum 2001) is run at five sigclip values (3.0, 4.5, 6.0, 8.0, 10.0) with sigfrac=0.3 and objlim=5.0 held at their documented defaults, repeated over independent injection trials per setting. Detection quality is scored against the known truth (precision/recall/F1), against real/synthetic point-source cores (PSF-core false-masking rate), and against the rest of the frame (background masking rate, reported as an upper bound since a real frame may already contain unlabelled real cosmic rays). Aperture photometry (photutils, local annulus background) on the cleaned array versus the pre-injection background gives the fractional flux bias introduced by each sigclip setting.",
+  "assumptions": [
+    "Archive metadata and calibration versions (CCDGAIN, READNSE*, EXPTIME, BUNIT) are recorded and interpreted correctly; calibrated ACS/WFC FLT arrays already in electrons are not double-converted by the detection gain.",
+    "Synthetic cosmic-ray tracks are a deliberately simple geometric line-track model (not a Monte Carlo particle-transport simulation), documented as such rather than presented as physically exhaustive.",
+    "sigfrac and objlim are held at astroscrappy's documented defaults throughout the sweep; only sigclip is varied.",
+    "Synthetic examples and injected cosmic rays are used only for validation, smoke testing, and controlled benchmarking, and are never presented as unmodified real observations."
+  ],
+  "limitations": [
+    "The first release is intentionally bounded and does not replace mature mission or community pipelines (astroscrappy itself, deepCR, Cosmic-CoNN, or calacs).",
+    "Results apply only to the selected ACS/WFC product(s), the injected cosmic-ray amplitude/length range used, and the sigclip/sigfrac/objlim combinations swept here.",
+    "The background masking rate is an upper bound on the true false-positive rate: a real HST background frame may already contain unlabelled real cosmic-ray hits that astroscrappy correctly flags, which this metric cannot distinguish from a genuine false positive.",
+    "No causal claim is made from this descriptive parameter-sweep benchmark; no unsupported precision beyond the input uncertainties is reported."
+  ],
+  "citation": {
+    "author": "Biswajit Jana",
+    "license": "BSD-3-Clause (original code); mission/archive products retain their original terms",
+    "repository": "https://github.com/Biswajit1999/cosmic-ray-cleanup"
+  }
+}
