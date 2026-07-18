@@ -2,6 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
-body { margin: 0; min-width: 320px; background: #060914; color: #e5e7eb; }
-.grid-bg { background-image: linear-gradient(rgba(148,163,184,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,.08) 1px, transparent 1px); background-size: 32px 32px; }
+:root {
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  background: #020607;
+  color: #e5f3f1;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: #020607; }
+button, input, select { font: inherit; }
+
+.cr-background {
+  background:
+    radial-gradient(circle at 78% 8%, rgba(13, 148, 136, .13), transparent 28rem),
+    linear-gradient(rgba(45, 212, 191, .025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(45, 212, 191, .025) 1px, transparent 1px),
+    #020607;
+  background-size: auto, 44px 44px, 44px 44px, auto;
+}
+
+.hero-frame::before {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  content: '';
+  background: repeating-linear-gradient(0deg, transparent, transparent 4px, rgba(94, 234, 212, .018) 5px);
+}
+
+.hero-frame::after {
+  position: absolute;
+  top: 0;
+  left: 7%;
+  width: 1px;
+  height: 100%;
+  content: '';
+  background: linear-gradient(transparent, rgba(45, 212, 191, .24), transparent);
+}
+
+.metric-card::before {
+  position: absolute;
+  left: 0;
+  top: 22%;
+  width: 2px;
+  height: 56%;
+  content: '';
+  background: #2dd4bf;
+  box-shadow: 0 0 18px rgba(45, 212, 191, .75);
+}
+
+.download-link {
+  border: 1px solid rgba(19, 78, 74, .9);
+  border-radius: .8rem;
+  padding: .7rem .8rem;
+  color: #99f6e4;
+  transition: border-color 160ms ease, background-color 160ms ease;
+}
+
+.download-link:hover { border-color: #14b8a6; background: rgba(20, 184, 166, .07); }
+
+summary::-webkit-details-marker { color: #2dd4bf; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}

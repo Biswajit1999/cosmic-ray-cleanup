@@ -25,6 +25,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
+import scienceplots  # noqa: F401
 from astroscrappy import detect_cosmics
 
 from hst_ccd_cosmic_ray_rejection_benchmark import __version__
@@ -42,6 +43,8 @@ from hst_ccd_cosmic_ray_rejection_benchmark.inject import inject_cosmic_rays, so
 from hst_ccd_cosmic_ray_rejection_benchmark.plotting import imshow_with_mask_overlay
 from hst_ccd_cosmic_ray_rejection_benchmark.provenance import get_git_commit, read_manifest, sha256_config
 from hst_ccd_cosmic_ray_rejection_benchmark.synthetic import build_synthetic_background
+
+plt.style.use(["science", "no-latex"])
 
 
 def _sidecar(path: Path, *, data_kind: str, sample_size: int, units: str, config_path: Path, extra: dict | None = None) -> None:
@@ -190,7 +193,7 @@ def make_demo_figures(out_dir: Path, config_path: Path) -> None:
     sources = sources_from_synthetic(bg.sources)
     _sweep_figures(
         out_dir, config_path, bg.science, bg.gain, bg.readnoise, sources,
-        data_kind="synthetic_demo", title_suffix=" — SYNTHETIC DEMO",
+        data_kind="synthetic_demo", title_suffix=" - SYNTHETIC DEMO",
     )
 
 

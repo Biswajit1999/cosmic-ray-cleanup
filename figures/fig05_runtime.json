@@ -3,7 +3,7 @@
   "data_kind": "real HST cutouts + controlled injection",
   "sample_size": 25,
   "units": "seconds/megapixel",
-  "git_commit": "LOCAL_UNCOMMITTED",
+  "git_commit": "1283380",
   "config_sha256": "6c0948c81225547177959ce78b0b588021baa7ada3000aa2e5b63826f9dcf3c9",
   "package_version": "0.1.0"
 }
