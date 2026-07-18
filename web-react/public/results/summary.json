@@ -1,0 +1,586 @@
+{
+  "project": "HST CCD Cosmic-Ray Rejection Benchmark",
+  "data_kind": "real HST cutouts + controlled injection",
+  "metrics": [
+    {
+      "name": "jfnx09u8q_sigclip_3_recall",
+      "estimate": 1.0,
+      "uncertainty_low": 1.0,
+      "uncertainty_high": 1.0,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_3_precision",
+      "estimate": 0.006960145835344447,
+      "uncertainty_low": 0.006677522429434278,
+      "uncertainty_high": 0.007290858389082829,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_3_f1",
+      "estimate": 0.013823850283717413,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_3_psf_core_false_masking_rate",
+      "estimate": 0.31467324290998766,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_3_background_masking_rate_upper_bound",
+      "estimate": 0.04476983605511828,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_3_aperture_flux_fractional_bias",
+      "estimate": -0.9088062462901162,
+      "uncertainty_low": -0.9307065449767593,
+      "uncertainty_high": -0.8889752621957977,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_3_mean_runtime_per_megapixel",
+      "estimate": 1.1826038333108753,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "seconds/megapixel",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_4.5_recall",
+      "estimate": 1.0,
+      "uncertainty_low": 1.0,
+      "uncertainty_high": 1.0,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_4.5_precision",
+      "estimate": 0.01561018185072659,
+      "uncertainty_low": 0.014810423978654248,
+      "uncertainty_high": 0.016263103224321698,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_4.5_f1",
+      "estimate": 0.03073923319192413,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_4.5_psf_core_false_masking_rate",
+      "estimate": 0.2527743526510481,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_4.5_background_masking_rate_upper_bound",
+      "estimate": 0.018066092889702127,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_4.5_aperture_flux_fractional_bias",
+      "estimate": -0.8811409426089589,
+      "uncertainty_low": -0.9006075693985728,
+      "uncertainty_high": -0.862996044019459,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_4.5_mean_runtime_per_megapixel",
+      "estimate": 1.2269995000355671,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "seconds/megapixel",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_6_recall",
+      "estimate": 1.0,
+      "uncertainty_low": 1.0,
+      "uncertainty_high": 1.0,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_6_precision",
+      "estimate": 0.023023716718503128,
+      "uncertainty_low": 0.02177598021149496,
+      "uncertainty_high": 0.02414112048886382,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_6_f1",
+      "estimate": 0.04500775425220135,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_6_psf_core_false_masking_rate",
+      "estimate": 0.21400739827373613,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_6_background_masking_rate_upper_bound",
+      "estimate": 0.011750687323167187,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_6_aperture_flux_fractional_bias",
+      "estimate": -0.8509790555790715,
+      "uncertainty_low": -0.8694855834045667,
+      "uncertainty_high": -0.832858801490539,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_6_mean_runtime_per_megapixel",
+      "estimate": 0.9648692222415572,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "seconds/megapixel",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_8_recall",
+      "estimate": 1.0,
+      "uncertainty_low": 1.0,
+      "uncertainty_high": 1.0,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_8_precision",
+      "estimate": 0.02940311937022077,
+      "uncertainty_low": 0.028658875522592612,
+      "uncertainty_high": 0.030294874584570686,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_8_f1",
+      "estimate": 0.0571249878078839,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_8_psf_core_false_masking_rate",
+      "estimate": 0.18569667077681873,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_8_background_masking_rate_upper_bound",
+      "estimate": 0.008551836583699516,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_8_aperture_flux_fractional_bias",
+      "estimate": -0.824152132869292,
+      "uncertainty_low": -0.8428251626212705,
+      "uncertainty_high": -0.806304068304084,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_8_mean_runtime_per_megapixel",
+      "estimate": 0.8688948333535034,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "seconds/megapixel",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_10_recall",
+      "estimate": 1.0,
+      "uncertainty_low": 1.0,
+      "uncertainty_high": 1.0,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_10_precision",
+      "estimate": 0.03678285033177581,
+      "uncertainty_low": 0.036184159402829076,
+      "uncertainty_high": 0.03738154126072253,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_10_f1",
+      "estimate": 0.07095488618172056,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_10_psf_core_false_masking_rate",
+      "estimate": 0.17237977805178792,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_10_background_masking_rate_upper_bound",
+      "estimate": 0.0068814764870456764,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_10_aperture_flux_fractional_bias",
+      "estimate": -0.7990205953650154,
+      "uncertainty_low": -0.8187304619516271,
+      "uncertainty_high": -0.7802413414073098,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u8q_sigclip_10_mean_runtime_per_megapixel",
+      "estimate": 0.8824629443956332,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "seconds/megapixel",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_3_recall",
+      "estimate": 1.0,
+      "uncertainty_low": 1.0,
+      "uncertainty_high": 1.0,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_3_precision",
+      "estimate": 0.0065372777837821115,
+      "uncertainty_low": 0.00618349838199171,
+      "uncertainty_high": 0.006891060558967656,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_3_f1",
+      "estimate": 0.012989289117780786,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_3_psf_core_false_masking_rate",
+      "estimate": 0.3349944382647386,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_3_background_masking_rate_upper_bound",
+      "estimate": 0.045877770775272476,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_3_aperture_flux_fractional_bias",
+      "estimate": -0.9145252723001637,
+      "uncertainty_low": -0.9434583548135397,
+      "uncertainty_high": -0.885202370053131,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_3_mean_runtime_per_megapixel",
+      "estimate": 1.0354073889256041,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "seconds/megapixel",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_4.5_recall",
+      "estimate": 1.0,
+      "uncertainty_low": 1.0,
+      "uncertainty_high": 1.0,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_4.5_precision",
+      "estimate": 0.015019415580808704,
+      "uncertainty_low": 0.014159793739133416,
+      "uncertainty_high": 0.015657032127776537,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_4.5_f1",
+      "estimate": 0.02959278542191483,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_4.5_psf_core_false_masking_rate",
+      "estimate": 0.26985539488320354,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_4.5_background_masking_rate_upper_bound",
+      "estimate": 0.018840444297148554,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_4.5_aperture_flux_fractional_bias",
+      "estimate": -0.8802234404998978,
+      "uncertainty_low": -0.904768881238003,
+      "uncertainty_high": -0.8539281107403522,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_4.5_mean_runtime_per_megapixel",
+      "estimate": 0.9198089444544166,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "seconds/megapixel",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_6_recall",
+      "estimate": 1.0,
+      "uncertainty_low": 1.0,
+      "uncertainty_high": 1.0,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_6_precision",
+      "estimate": 0.020138043186143727,
+      "uncertainty_low": 0.019050116316986377,
+      "uncertainty_high": 0.021085250517733193,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_6_f1",
+      "estimate": 0.039478540107503096,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_6_psf_core_false_masking_rate",
+      "estimate": 0.22869855394883204,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_6_background_masking_rate_upper_bound",
+      "estimate": 0.012960438990375018,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_6_aperture_flux_fractional_bias",
+      "estimate": -0.8560902274002089,
+      "uncertainty_low": -0.8845588036630092,
+      "uncertainty_high": -0.8287308150774769,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_6_mean_runtime_per_megapixel",
+      "estimate": 0.8475232777547919,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "seconds/megapixel",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_8_recall",
+      "estimate": 1.0,
+      "uncertainty_low": 1.0,
+      "uncertainty_high": 1.0,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_8_precision",
+      "estimate": 0.026513721651961995,
+      "uncertainty_low": 0.025916719354772404,
+      "uncertainty_high": 0.027135939898518296,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_8_f1",
+      "estimate": 0.051656856906120374,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_8_psf_core_false_masking_rate",
+      "estimate": 0.20200222469410453,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_8_background_masking_rate_upper_bound",
+      "estimate": 0.009573772421366667,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_8_aperture_flux_fractional_bias",
+      "estimate": -0.8237435505689692,
+      "uncertainty_low": -0.8482505193910406,
+      "uncertainty_high": -0.7990488415270127,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_8_mean_runtime_per_megapixel",
+      "estimate": 0.8835974444324771,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "seconds/megapixel",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_10_recall",
+      "estimate": 1.0,
+      "uncertainty_low": 1.0,
+      "uncertainty_high": 1.0,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_10_precision",
+      "estimate": 0.03221650569467428,
+      "uncertainty_low": 0.029549402969706307,
+      "uncertainty_high": 0.034692548764563375,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_10_f1",
+      "estimate": 0.06240708632238466,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_10_psf_core_false_masking_rate",
+      "estimate": 0.18220244716351502,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_10_background_masking_rate_upper_bound",
+      "estimate": 0.007785908988178575,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_10_aperture_flux_fractional_bias",
+      "estimate": -0.7928331010857591,
+      "uncertainty_low": -0.8166376746919034,
+      "uncertainty_high": -0.770792250683388,
+      "units": "dimensionless",
+      "sample_size": 5
+    },
+    {
+      "name": "jfnx09u9q_sigclip_10_mean_runtime_per_megapixel",
+      "estimate": 0.8665287222053546,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "seconds/megapixel",
+      "sample_size": 5
+    }
+  ],
+  "provenance": {
+    "config_sha256": "6c0948c81225547177959ce78b0b588021baa7ada3000aa2e5b63826f9dcf3c9",
+    "git_commit": "LOCAL_UNCOMMITTED",
+    "package_version": "0.1.0",
+    "sigclip_values": [
+      3.0,
+      4.5,
+      6.0,
+      8.0,
+      10.0
+    ],
+    "sigfrac": 0.3,
+    "objlim": 5.0,
+    "n_real_products": 2,
+    "product_ids": [
+      "jfnx09u8q",
+      "jfnx09u9q"
+    ]
+  },
+  "warnings": []
+}
