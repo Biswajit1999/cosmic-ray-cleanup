@@ -230,7 +230,7 @@ CR-cleaning-induced bias at any of the five sigclip settings tested.**
       first-release time-box.
   - [ ] Decide whether to extend the sigclip sweep to also vary `sigfrac`/`objlim`
       (currently held at documented defaults) as a follow-up.
-- [ ] Pin the `TODO_VERIFY` MAST/HLA documentation citation in `references.bib`
+- [ ] Pin the `VERIFICATION_PENDING` MAST/HLA documentation citation in `references.bib`
       to a specific dated edition.
 - [ ] Consider running the real-data sweep on the full-frame science array (not
       the 600x600 cutout) if compute time allows, as a follow-up validation of

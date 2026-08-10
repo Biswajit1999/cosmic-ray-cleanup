@@ -50,8 +50,8 @@ mitigated by:
 | van Dokkum 2001, L.A.Cosmic | arXiv:astro-ph/0108003 abstract page | Verified: "Cosmic-Ray Rejection by Laplacian Edge Detection", P. G. van Dokkum, PASP 113, 1420 (2001). |
 | Astro-SCRAPPY | github.com/astropy/astroscrappy README | Verified: McCully et al., Zenodo DOI 10.5281/zenodo.1482018, BSD-3-Clause, cites van Dokkum 2001 PASP 113 1420. |
 | deepCR | arXiv:1907.09500 + CrossRef (10.3847/1538-4357/ab3fa6) | Verified: Zhang & Bloom, "deepCR: Cosmic Ray Rejection with Deep Learning", ApJ 889, 24 (2020). |
-| Cosmic-CoNN | arXiv:2106.14922 abstract page | Verified as an arXiv preprint (v3, 2022): Xu, McCully, Dong, Howell, Sen, "Cosmic-CoNN: A Cosmic Ray Detection Deep-Learning Framework, Dataset, and Toolkit". No traditional journal volume/page found at verification time — cited as an eprint, not marked TODO_VERIFY (the arXiv record itself is the verified primary source). |
-| MAST/Hubble Legacy Archive documentation | Not a single citable paper; cited as `@manual` entries pointing to the live STScI documentation URLs, marked `TODO_VERIFY` for a specific dated edition, matching the pattern used in the sibling projects for the same class of citation. |
+| Cosmic-CoNN | arXiv:2106.14922 abstract page | Verified as an arXiv preprint (v3, 2022): Xu, McCully, Dong, Howell, Sen, "Cosmic-CoNN: A Cosmic Ray Detection Deep-Learning Framework, Dataset, and Toolkit". No traditional journal volume/page found at verification time — cited as an eprint, not marked VERIFICATION_PENDING (the arXiv record itself is the verified primary source). |
+| MAST/Hubble Legacy Archive documentation | Not a single citable paper; cited as `@manual` entries pointing to the live STScI documentation URLs, marked `VERIFICATION_PENDING` for a specific dated edition, matching the pattern used in the sibling projects for the same class of citation. |
 
 Additional citation used for the FLT/FLC product structure and DQ conventions:
 Anderson & Bedin 2010, PASP 122, 1035 (DOI 10.1086/656399, confirmed resolving via
@@ -130,7 +130,7 @@ precision-recall tradeoff and flux-bias-vs-aggressiveness curves required by
 
 - MAST access: to be live-verified in Phase 8 (not assumed).
 - Citations: all verified above except the MAST/HLA documentation manual entries,
-  which are marked `TODO_VERIFY` in `references.bib` as instructed.
+  which are marked `VERIFICATION_PENDING` in `references.bib` as instructed.
 - Synthetic recovery: validation gate implemented in
   `tests/test_core_pipeline.py`/`test_metrics.py` and must pass before Phase 8.
 
