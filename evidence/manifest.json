@@ -1,0 +1,382 @@
+{
+  "schema": 1,
+  "project": "HST CCD Cosmic-Ray Rejection Benchmark",
+  "repository": "https://github.com/Biswajit1999/cosmic-ray-cleanup",
+  "files": [
+    {
+      "label": "Research reference",
+      "path": "data/research-reference.json",
+      "role": "Data and provenance",
+      "bytes": 706,
+      "sha256": "dab8c9cfab04117d87770a59ee8669e9f15fd2c5603aa50d55ddbc22a2043c03",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "title",
+        "description",
+        "equations",
+        "references",
+        "anchors"
+      ],
+      "arrays": {
+        "equations": 3,
+        "references": 1,
+        "anchors": 3
+      }
+    },
+    {
+      "label": "Demo",
+      "path": "data/example/demo.csv",
+      "role": "Data and provenance",
+      "bytes": 80,
+      "sha256": "2231cd2f44a7854fefcb8da60f527333a903c9c7a75fbd9154fdde13de699305",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 5,
+      "columns": 3,
+      "headers": [
+        "x",
+        "value",
+        "uncertainty"
+      ],
+      "preview": [
+        [
+          "0",
+          "0.10",
+          "0.02"
+        ],
+        [
+          "1",
+          "0.18",
+          "0.03"
+        ],
+        [
+          "2",
+          "0.14",
+          "0.02"
+        ],
+        [
+          "3",
+          "0.24",
+          "0.04"
+        ]
+      ]
+    },
+    {
+      "label": "Notes for data/raw",
+      "path": "data/raw/README.md",
+      "role": "Data and provenance",
+      "bytes": 122,
+      "sha256": "d0eb5596398ea30541e4414f1097f4f4b986c4d7d253627e8a33349ec93f9922",
+      "hash_basis": "LF-normalised text",
+      "format": "MD"
+    },
+    {
+      "label": "Project",
+      "path": "web-react/public/project.json",
+      "role": "Data and provenance",
+      "bytes": 4830,
+      "sha256": "48ae85eff89e90b672f2c88ae459e734679346fcac2079cd5ba0753f9384e363",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "title",
+        "repo",
+        "category",
+        "status",
+        "priority",
+        "question",
+        "gap"
+      ],
+      "arrays": {
+        "figures": 5,
+        "validationContract": 7,
+        "assumptions": 4,
+        "limitations": 4
+      }
+    },
+    {
+      "label": "Fig02 cleaning comparison",
+      "path": "figures/fig02_cleaning_comparison.json",
+      "role": "Tables and numerical results",
+      "bytes": 289,
+      "sha256": "091040738349fd388c278509ed819ead824244e594a0f9028c5dd62560b33f6b",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "figure",
+        "data_kind",
+        "sample_size",
+        "units",
+        "git_commit",
+        "config_sha256",
+        "package_version"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Fig02 cleaning comparison",
+      "path": "web-react/public/figures/fig02_cleaning_comparison.json",
+      "role": "Tables and numerical results",
+      "bytes": 289,
+      "sha256": "091040738349fd388c278509ed819ead824244e594a0f9028c5dd62560b33f6b",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "figure",
+        "data_kind",
+        "sample_size",
+        "units",
+        "git_commit",
+        "config_sha256",
+        "package_version"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Benchmarks",
+      "path": "web-react/public/results/benchmarks.json",
+      "role": "Tables and numerical results",
+      "bytes": 1526,
+      "sha256": "bc0164495c3de1e2cccd811bc3033d53de0c6be859a3acefe9372f767adeb5be",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "records": 3,
+      "fields": [
+        "label",
+        "wall_time_seconds",
+        "peak_memory_mib",
+        "peak_memory_method",
+        "dataset_size",
+        "python_version",
+        "platform"
+      ]
+    },
+    {
+      "label": "Summary",
+      "path": "web-react/public/results/summary.json",
+      "role": "Tables and numerical results",
+      "bytes": 16969,
+      "sha256": "f1f0f8a67344c3018a03ee9e2b7130e8346d2c245f768cffc4ffc9fe6bdbab92",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "project",
+        "data_kind",
+        "metrics",
+        "provenance",
+        "warnings"
+      ],
+      "arrays": {
+        "metrics": 70,
+        "warnings": 0
+      }
+    },
+    {
+      "label": "Fig01 injected image and mask",
+      "path": "figures/fig01_injected_image_and_mask.json",
+      "role": "Tables and numerical results",
+      "bytes": 322,
+      "sha256": "89e7a9942119a30121576cbd0ba8a8e4c94c922e3c8960337959a6f8cda0f633",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "figure",
+        "data_kind",
+        "sample_size",
+        "units",
+        "git_commit",
+        "config_sha256",
+        "package_version"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Fig03 precision recall panel",
+      "path": "figures/fig03_precision_recall_panel.json",
+      "role": "Tables and numerical results",
+      "bytes": 297,
+      "sha256": "75a9b1f0bd4871b5ef68da5bc8706ae3a4a55fb06abefa9032f078a7d1ca3533",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "figure",
+        "data_kind",
+        "sample_size",
+        "units",
+        "git_commit",
+        "config_sha256",
+        "package_version"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Fig04 flux bias",
+      "path": "figures/fig04_flux_bias.json",
+      "role": "Tables and numerical results",
+      "bytes": 285,
+      "sha256": "e559db3d3043cdd84af470b884092bbb853ac2fe89b9d4e399e9feffb6139499",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "figure",
+        "data_kind",
+        "sample_size",
+        "units",
+        "git_commit",
+        "config_sha256",
+        "package_version"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Fig05 runtime",
+      "path": "figures/fig05_runtime.json",
+      "role": "Tables and numerical results",
+      "bytes": 286,
+      "sha256": "ba3296cb37833d5ed402bdd4f421b171f9516744026754df87b5fd356e7652fe",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "figure",
+        "data_kind",
+        "sample_size",
+        "units",
+        "git_commit",
+        "config_sha256",
+        "package_version"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Fig01 injected image and mask",
+      "path": "web-react/public/figures/fig01_injected_image_and_mask.json",
+      "role": "Tables and numerical results",
+      "bytes": 322,
+      "sha256": "89e7a9942119a30121576cbd0ba8a8e4c94c922e3c8960337959a6f8cda0f633",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "figure",
+        "data_kind",
+        "sample_size",
+        "units",
+        "git_commit",
+        "config_sha256",
+        "package_version"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Fig03 precision recall panel",
+      "path": "web-react/public/figures/fig03_precision_recall_panel.json",
+      "role": "Tables and numerical results",
+      "bytes": 297,
+      "sha256": "75a9b1f0bd4871b5ef68da5bc8706ae3a4a55fb06abefa9032f078a7d1ca3533",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "figure",
+        "data_kind",
+        "sample_size",
+        "units",
+        "git_commit",
+        "config_sha256",
+        "package_version"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Fig04 flux bias",
+      "path": "web-react/public/figures/fig04_flux_bias.json",
+      "role": "Tables and numerical results",
+      "bytes": 285,
+      "sha256": "e559db3d3043cdd84af470b884092bbb853ac2fe89b9d4e399e9feffb6139499",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "figure",
+        "data_kind",
+        "sample_size",
+        "units",
+        "git_commit",
+        "config_sha256",
+        "package_version"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Fig05 runtime",
+      "path": "web-react/public/figures/fig05_runtime.json",
+      "role": "Tables and numerical results",
+      "bytes": 286,
+      "sha256": "ba3296cb37833d5ed402bdd4f421b171f9516744026754df87b5fd356e7652fe",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "figure",
+        "data_kind",
+        "sample_size",
+        "units",
+        "git_commit",
+        "config_sha256",
+        "package_version"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Fig02 cleaning comparison",
+      "path": "figures/fig02_cleaning_comparison.png",
+      "role": "Figures",
+      "bytes": 2607211,
+      "sha256": "ead3853bedc2f3d6eaddb66dadda8c7b66643923044fd4c0948fd091da2d9ef5",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    },
+    {
+      "label": "Fig02 cleaning comparison",
+      "path": "figures/fig02_cleaning_comparison.svg",
+      "role": "Figures",
+      "bytes": 862083,
+      "sha256": "accc6cff02306941ef175b3755acbee1e081193cdfc11734287a92dc917fdb62",
+      "hash_basis": "LF-normalised text",
+      "format": "SVG"
+    },
+    {
+      "label": "Fig02 cleaning comparison",
+      "path": "web-react/public/figures/fig02_cleaning_comparison.png",
+      "role": "Figures",
+      "bytes": 2607211,
+      "sha256": "ead3853bedc2f3d6eaddb66dadda8c7b66643923044fd4c0948fd091da2d9ef5",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    },
+    {
+      "label": "Fig02 cleaning comparison",
+      "path": "web-react/public/figures/fig02_cleaning_comparison.svg",
+      "role": "Figures",
+      "bytes": 862083,
+      "sha256": "accc6cff02306941ef175b3755acbee1e081193cdfc11734287a92dc917fdb62",
+      "hash_basis": "LF-normalised text",
+      "format": "SVG"
+    },
+    {
+      "label": "Fig00 blueprint",
+      "path": "figures/fig00_blueprint.svg",
+      "role": "Figures",
+      "bytes": 1369,
+      "sha256": "06fdbf6bf04aa2727d3a5fcea4fb924fd3e92eaa52034f0c068dacf17ba10259",
+      "hash_basis": "LF-normalised text",
+      "format": "SVG"
+    },
+    {
+      "label": "Fig00 smoke test",
+      "path": "figures/fig00_smoke_test.png",
+      "role": "Figures",
+      "bytes": 145931,
+      "sha256": "6e104c3cdba1becfbf60a54e0703f2bdf3517d73746068d6e54045eff7680253",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    }
+  ]
+}

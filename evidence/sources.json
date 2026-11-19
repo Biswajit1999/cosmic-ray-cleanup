@@ -1,0 +1,116 @@
+{
+  "project": "HST CCD Cosmic-Ray Rejection Benchmark",
+  "repository": "https://github.com/Biswajit1999/cosmic-ray-cleanup",
+  "files": [
+    {
+      "label": "Research reference",
+      "path": "data/research-reference.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Demo",
+      "path": "data/example/demo.csv",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Notes for data/raw",
+      "path": "data/raw/README.md",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Project",
+      "path": "web-react/public/project.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Fig02 cleaning comparison",
+      "path": "figures/fig02_cleaning_comparison.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Fig02 cleaning comparison",
+      "path": "web-react/public/figures/fig02_cleaning_comparison.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Benchmarks",
+      "path": "web-react/public/results/benchmarks.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Summary",
+      "path": "web-react/public/results/summary.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Fig01 injected image and mask",
+      "path": "figures/fig01_injected_image_and_mask.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Fig03 precision recall panel",
+      "path": "figures/fig03_precision_recall_panel.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Fig04 flux bias",
+      "path": "figures/fig04_flux_bias.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Fig05 runtime",
+      "path": "figures/fig05_runtime.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Fig01 injected image and mask",
+      "path": "web-react/public/figures/fig01_injected_image_and_mask.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Fig03 precision recall panel",
+      "path": "web-react/public/figures/fig03_precision_recall_panel.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Fig04 flux bias",
+      "path": "web-react/public/figures/fig04_flux_bias.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Fig05 runtime",
+      "path": "web-react/public/figures/fig05_runtime.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Fig02 cleaning comparison",
+      "path": "figures/fig02_cleaning_comparison.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Fig02 cleaning comparison",
+      "path": "figures/fig02_cleaning_comparison.svg",
+      "role": "Figures"
+    },
+    {
+      "label": "Fig02 cleaning comparison",
+      "path": "web-react/public/figures/fig02_cleaning_comparison.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Fig02 cleaning comparison",
+      "path": "web-react/public/figures/fig02_cleaning_comparison.svg",
+      "role": "Figures"
+    },
+    {
+      "label": "Fig00 blueprint",
+      "path": "figures/fig00_blueprint.svg",
+      "role": "Figures"
+    },
+    {
+      "label": "Fig00 smoke test",
+      "path": "figures/fig00_smoke_test.png",
+      "role": "Figures"
+    }
+  ]
+}
