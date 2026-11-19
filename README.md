@@ -74,3 +74,18 @@ Biswajit Jana
 ## Licence
 
 BSD-3-Clause for original code. Mission/archive products retain their original terms.
+
+## Research evidence and downloads
+
+- [Download the machine-readable table profiles](evidence/table-profiles.json) for 1 archived tables. Open `table-evidence.html` from the checkout for the coverage chart.
+- Start with [Fig02 cleaning comparison](figures/fig02_cleaning_comparison.json), [Fig02 cleaning comparison](web-react/public/figures/fig02_cleaning_comparison.json), [Benchmarks](web-react/public/results/benchmarks.json).
+- [View Fig02 cleaning comparison](figures/fig02_cleaning_comparison.png).
+
+Run these commands from the repository root to rebuild the published evidence.
+
+```sh
+python scripts/evidence_catalog.py
+python scripts/render_evidence_page.py
+python scripts/profile_evidence_tables.py
+python scripts/render_table_profiles.py
+```
